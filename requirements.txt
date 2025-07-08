@@ -1,0 +1,12 @@
+flask==2.3.3
+werkzeug==2.3.7
+flask-cors==4.0.0
+Pillow==10.0.1
+torch==2.0.1
+torchvision==0.15.2
+numpy==1.24.3
+transformers==4.35.2
+accelerate==0.24.1
+sentencepiece==0.1.99
+requests==2.31.0
+python-dotenv==1.0.0

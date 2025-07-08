@@ -1,1 +1,1 @@
-# SkinOAI_Backend
+# Skin-o-Backend
