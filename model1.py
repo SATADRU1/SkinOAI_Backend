@@ -1,6 +1,6 @@
 from roboflow import Roboflow
 
-rf = Roboflow(api_key="K3NtQYY2EhfGyAd78fvK")
+rf = Roboflow(api_key="................")
 project = rf.workspace().project("my-first-project-apmvj")
 model = project.version(1).model
 result = model.predict("img1.jpg").json()
