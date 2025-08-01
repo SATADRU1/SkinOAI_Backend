@@ -1,62 +1,3 @@
-# SkinOAI Backend
-
-A simplified Flask API for skin condition prediction using Roboflow.
-
-## Setup
-
-1. Install dependencies:
-```bash
-pip install -r requirements.txt
-```
-
-2. Run the server:
-```bash
-python app.py
-```
-
-The server will start on `http://localhost:5000`
-
-## API Endpoints
-
-- `GET /` - Health check
-- `GET /ping` - Simple ping endpoint
-- `POST /predict` - Predict skin condition from image
-
-### Predict Endpoint
-
-Send a POST request to `/predict` with JSON data:
-
-```json
-{
-  "image": "base64_encoded_image_data"
-}
-```
-
-Response:
-```json
-{
-  "success": true,
-  "class": "predicted_class",
-  "confidence": 0.95,
-  "message": "Prediction successful"
-}
-```
-
-## Testing
-
-Run the test script to verify the API:
-```bash
-python test_simple.py
-```
-
-## Files
-
-- `app.py` - Main Flask application
-- `model1.py` - Original Roboflow model reference
-- `requirements.txt` - Python dependencies
-- `test_simple.py` - Test script
-- `img1.jpg` - Sample test image
-
 # SkinOAI: AI-Powered Skin Disease Detection
 
 SkinOAI is a mobile application that uses machine learning to detect various skin conditions from images. The application provides an intuitive interface for users to upload skin images and receive potential condition predictions.
@@ -144,6 +85,65 @@ This project uses a private API key for the Roboflow service. For security reaso
 - `POST /predict`: Submit an image for skin disease prediction
   - Request body: `{ "image": "base64_encoded_image" }`
   - Response: `{ "prediction": "disease_name", "confidence": 0.95, "description": "..." }`
+ 
+# SkinOAI Backend
+
+A simplified Flask API for skin condition prediction using Roboflow.
+
+## Setup
+
+1. Install dependencies:
+```bash
+pip install -r requirements.txt
+```
+
+2. Run the server:
+```bash
+python app.py
+```
+
+The server will start on `http://localhost:5000`
+
+## API Endpoints
+
+- `GET /` - Health check
+- `GET /ping` - Simple ping endpoint
+- `POST /predict` - Predict skin condition from image
+
+### Predict Endpoint
+
+Send a POST request to `/predict` with JSON data:
+
+```json
+{
+  "image": "base64_encoded_image_data"
+}
+```
+
+Response:
+```json
+{
+  "success": true,
+  "class": "predicted_class",
+  "confidence": 0.95,
+  "message": "Prediction successful"
+}
+```
+
+## Testing
+
+Run the test script to verify the API:
+```bash
+python test_simple.py
+```
+
+## Files
+
+- `app.py` - Main Flask application
+- `model1.py` - Original Roboflow model reference
+- `requirements.txt` - Python dependencies
+- `test_simple.py` - Test script
+- `img1.jpg` - Sample test image
 
 ## 🤝 Contributing
 
@@ -154,6 +154,7 @@ Contributions are welcome! Please feel free to submit a Pull Request.
 3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
 4. Push to the branch (`git push origin feature/AmazingFeature`)
 5. Open a Pull Request
+
 
 ## 🙏 Acknowledgments
 
